@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+    <script src="bower_components/zxcvbn/dist/zxcvbn.js">
+    </script> 
+    
+    <link href="owl.carousel.css" rel="stylesheet">
+<link href="owl.theme.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="owl-carousel/owl.carousel.js"></script>
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+<link  rel="stylesheet" href="owl-carousel/owl.theme.css">
+<script src="jquery-1.9.1.min.js"></script>
+<script src="assets/owl-carousel/owl.carousel.js"></script>
+
+
+
+    <link rel="stylesheet" href="css/styleIndex.css">
+    
+</head>
+<body>
+    <!-- Hero starts -->
+    <div id="hash-blog-section">
+        <div class="container" style="position: relative;">
+              <section class="page-img">
+                  <section class="hero">
+                      <h1 class="headcls">Tourism</h1>
+                      <p> Explore the beauty of Gods own country</p>
+                  </section>
+              </section>
+          </div>
+      </div>
+    <!-- Hero Ends -->
+
+<!-- top starts here -->
+<div id="navb">
+    <nav  class="navbar navbar-default navbar-expand-lg navbar-light">
+        <div class="navbar-header d-flex col">
+            <a class="navbar-brand" href="javascript:void(0)">Tourism<b>Kerala</b></a>  		
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+                <span class="navbar-toggler-icon"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+            <ul class="nav navbar-nav">
+                
+                <li class="nav-item"><a href="./Tourism_Home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">About</a></li>			
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Contact</a></li>
+            </ul>
+            <form class="navbar-form form-inline">
+                <div class="input-group search-box">								
+                    <input type="text" id="search" class="form-control" placeholder="Search here...">
+                    <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right ml-auto">			
+                <li class="nav-item">
+                    <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="javascript:void(0)">Login</a>
+                    <ul class="dropdown-menu form-wrapper">					
+                        <li>
+                            <form action="/examples/actions/confirmation.php" method="post">
+                                <p class="hint-text">Sign in with your social media account</p>
+                                <div class="form-group social-btn clearfix">
+                                    <a href="javascript:void(0)" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="javascript:void(0)" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+                                </div>
+                                <div class="or-seperator"><b>or</b></div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Username" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password" required="required">
+                                </div>
+                                <input type="submit" class="btn btn-primary btn-block" value="Login">
+                                <div class="form-footer">
+                                    <a href="#">Forgot Your password?</a>
+                                    <a href="/Tourism_SignUp.html">Create Account?</a>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+                    <ul class="dropdown-menu form-wrapper">					
+                        <li>
+                            <form id="SignUp" action="Tourism_Login.html" name="form1" onsubmit="return formValidate()">
+                                <p class="hint-text">Fill in this form to create your account!</p>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name" required="required"  >
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone number" required="required" id="ph" name="phone">
+                                
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Username/email" required="required" id="email" >
+                                </div>
+                              
+                               
+
+                                   <div class="form-group">
+                                    <input  type="password" class="form-control" placeholder="Password"  required="required" id="psw">
+                                   <br> <meter max="4" id="password-strength-meter"></meter>
+                                   <p id="password-strength-text"></p>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password" required="required" id="cpsw">
+                                   </div>
+                                    <label for="error" id="error"></label>
+                                
+                                <div class="form-group">
+                                    <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+                                </div>
+                            
+                                <input type="submit" class="btn btn-primary btn-block" value="Sign up">
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+        <!-- navbar top ends here -->
+        <!-- Main div -->
+        <div class="jumbotron">
+            <h1 class="text-center "> <span class="badge badge-danger">Welcome to Kerala Tourism </span></h1>
+                <div class="container">
+                <p class="text-justify text-info"> Kerala's culture and traditions, coupled with its varied demographics,
+                     have made the state one of the most popular tourist destinations in India.
+                      In 2012, National Geographic's Traveller magazine named Kerala as one of the 
+                      "ten paradises of the world"[504][505] and "50 must see destinations of a lifetime".[506]
+                       Travel and Leisure also described Kerala as "One of the 100 great trips for the 21st century".[504][507]
+                        In 2012, it overtook the Taj Mahal to be the number one travel destination in Google's search trends for India.
+                        [508] CNN Travel listed Kerala amongst its '19 best places to visit in 2019'.[509]</p>
+
+                        <p class="text-justify text-info">   Kerala's beaches, backwaters, lakes, mountain ranges, waterfalls, ancient ports, palaces, religious 
+                    institutions[510] and wildlife sanctuaries are major attractions for both domestic and international tourists.[511] The city of Kochi ranks first in the total number of international and domestic tourists in Kerala.[512][513] Until the early 1980s, Kerala was a relatively unknown destination compared to other states in the country.[514] In 1986 the government of Kerala declared tourism an important industry and it was the first state in India to do so.[515] Marketing campaigns launched by the Kerala Tourism Development Corporation, the government agency that oversees the tourism prospects of the state, resulted in the growth of the tourism industry.[516] Many advertisements branded Kerala with the tagline Kerala, God's Own Country.[516] Kerala tourism is a global brand and regarded as one of the destinations with highest recall.[516] In 2006, Kerala attracted 8.5 million tourists, an increase of 23.68% over the previous year, making the state one of the fastest-growing popular 
+                    destinations in the world.[517] In 2011, tourist inflow to Kerala crossed the 10-million mark.[518]</p>
+                        </p>
+                        </div>
+           <a href="Tourism_Login.html"> <h1 class="text-center "> <span id="blink" class="badge badge-danger"> Click me to Explore More </span></h1>
+</a>
+</div>        
+        <!-- Main div -->
+<!-- Poloroid tilted div -->
+<div id="sideDiv" class="jumbotron sideDiv"></div>
+<!-- polaroid tilted div -->
+<!-- footer -->
+<div id="nav-placeholder">
+
+</div>
+<!-- footer -->
+        <script type="text/javascript">
+
+                    $(document).on("click", ".navbar-right .dropdown-menu", function(e){
+                        e.stopPropagation();
+                    });
+                    
+                    
+                    window.onscroll = function() {myFunction()};
+                    var navbar = document.getElementById("navb");
+                    var sticky = navbar.offsetTop;
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                              navbar.classList.add("sticky")
+                         } else {
+                             navbar.classList.remove("sticky");
+                        }
+                    }
+                    $(function(){
+  $("#nav-placeholder").load("footer.html");
+});
+$(function(){
+    $("#sideDiv").load("Polaroid.html");
+  });
+
+  let uemail= document.getElementById("email");
+ let pass=document.getElementById("psw");
+ let cpass=document.getElementById("cpsw");
+ let inputtxt=document.getElementById("ph");
+ let error=document.getElementById("error");
+ 
+ let strength = {
+        0: "Worst ☹",
+        1: "Bad ☹",
+        2: "Weak ☹",
+        3: "Good ☺",
+        4: "Strong ☻"
+}
+
+let meter = document.getElementById('password-strength-meter');
+let text = document.getElementById('password-strength-text');
+
+pass.addEventListener('input', function()
+{
+    var val = pass.value;
+    var result = zxcvbn(val);
+    
+    // Update the password strength meter
+    meter.value = result.score;
+   
+    // Update the text indicator
+    if(val !== "") {
+        text.innerHTML = "Strength: " + "<strong>" + strength[result.score] + "</strong>" + "<span class='feedback'>" 
+        + result.feedback.warning + " " + result.feedback.suggestions + "</span"; 
+
+    }
+    else {
+        text.innerHTML = "";
+    }
+});
+
+ function formValidate()
+{
+  var phoneno = /^\d{10}$/;
+ var phoneformat= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ if(phoneno.value==""){
+     return false;
+ }else
+ {
+  if(!(phoneno.test(inputtxt.value.trim())))
+        {
+        //alert("Invalid phone number")
+        inputtxt.focus();
+        inputtxt.style.border="2px solid red";
+        error.innerHTML="invalid";
+        return false;
+        }
+
+        else if(inputtxt.value.trim()==phoneformat)
+        {
+            var cleaned=(''+inputtxt).replace(/\D/g,'');
+            var match=cleaned.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/);
+            if(!match)
+            inputtxt.innerHTML= march[1]+' '+match[2]+' '+match[3];
+
+        return true;
+        }else if(inputtxt.value.trim()!=phoneformat){
+            inputtxt.focus();
+            inputtxt.style.border="2px solid blue";
+            error.innerHTML="invalid format";
+        }
+        
+        else if(uemail.value.trim()!=mailformat)
+        {
+          uemail.focus();
+          uemail.style.border="2px solid red";
+        return false;
+        }
+
+
+}
+};
+
+</script>
+</body>
+</html>

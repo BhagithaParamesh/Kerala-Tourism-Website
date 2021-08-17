@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+    <script src="bower_components/zxcvbn/dist/zxcvbn.js">
+    </script> 
+    <link rel="stylesheet" href="css/styleNav.css">
+    <link rel="stylesheet" href="css/styleMeter.css">
+</head>
+<body>
+    <div class=" jumbotron " style="background-image: url('/images/Capture.PNG'); background-size: cover;">
+        <div class="container " style="width: 25%; margin-right: 43%; margin-top: 5%; ">
+    <form id="SignUp" method="post" name="SignUpHere" action="Tourism_Login.html" onsubmit="return formValidate()">
+        <p class="hint-text text-center "><strong>Fill in this form to create your account!</strong></p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name" required="required"  >
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone number" required="required" id="ph" name="phone">
+        </div>
+        <hr>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Username/email" required="required" id="email" >
+        </div>
+        <div class="form-group">
+            <input  type="password" class="form-control" placeholder="Password"  required="required" id="psw">
+          
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Confirm Password" required="required" id="cpsw">
+            <br> <meter max="4" id="password-strength-meter"></meter>
+            <p id="password-strength-text"></p>
+        </div>
+
+        <div class="form-group">
+            <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+        </div>
+        <div class="form-group">
+        <label for="error" id="error"></label>
+    </div>
+        <div class="form-group">
+        <input type="submit" class="btn btn-primary btn-block" value="Sign up" >
+        </div>
+        <div class="form-group"> <hr></div>
+    </form>
+    
+</div>
+</div>
+<script src="/js/script.js"></script>
+<script type="text/javascript">
+
+    $(document).on("click", ".navbar-right .dropdown-menu", function(e){
+        e.stopPropagation();
+    });
+    
+    
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navb");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+         } else {
+             navbar.classList.remove("sticky");
+        }
+    }
+    $(function(){
+$("#nav-placeholder").load("footer.html");
+});
+$(function(){
+$("#sideDiv").load("Polaroid.html");
+});
+
+let uemail= document.getElementById("email");
+let pass=document.getElementById("psw");
+let cpass=document.getElementById("cpsw");
+let inputtxt=document.getElementById("ph");
+let error=document.getElementById("error");
+
+let strength = {
+0: "Worst ☹",
+1: "Bad ☹",
+2: "Weak ☹",
+3: "Good ☺",
+4: "Strong ☻"
+}
+
+let meter = document.getElementById('password-strength-meter');
+let text = document.getElementById('password-strength-text');
+
+pass.addEventListener('input', function()
+{
+var val = pass.value;
+var result = zxcvbn(val);
+
+// Update the password strength meter
+meter.value = result.score;
+
+// Update the text indicator
+if(val !== "") {
+text.innerHTML = "Strength: " + "<strong>" + strength[result.score] + "</strong>" + "<span class='feedback'>" 
++ result.feedback.warning + " " + result.feedback.suggestions + "</span"; 
+
+}
+else {
+text.innerHTML = "";
+}
+});
+
+function formValidate()
+{
+var phoneno = /^\d{10}$/;
+var phoneformat= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(phoneno.value==""){
+return false;
+}else
+{
+if(!(phoneno.test(inputtxt.value.trim())))
+{
+//alert("Invalid phone number")
+inputtxt.focus();
+inputtxt.style.border="2px solid red";
+error.innerHTML="invalid";
+return false;
+}
+
+else if(inputtxt.value.trim()==phoneformat)
+{
+var cleaned=(''+inputtxt).replace(/\D/g,'');
+var match=cleaned.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/);
+if(!match)
+inputtxt.innerHTML= march[1]+' '+match[2]+' '+match[3];
+
+return true;
+}else if(inputtxt.value.trim()!=phoneformat){
+inputtxt.focus();
+inputtxt.style.border="2px solid blue";
+error.innerHTML="invalid format";
+}
+
+else if(uemail.value.trim()!=mailformat)
+{
+uemail.focus();
+uemail.style.border="2px solid red";
+return false;
+}
+
+
+}
+};
+
+</script>
+</body>
+
+</html>
