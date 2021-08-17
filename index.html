@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
     <script src="bower_components/zxcvbn/dist/zxcvbn.js">
     </script> 
-    
+     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link href="owl.carousel.css" rel="stylesheet">
 <link href="owl.theme.css" rel="stylesheet">
 
@@ -28,7 +28,188 @@
 
 
     <link rel="stylesheet" href="css/styleIndex.css">
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        max-height: 550px;;
+        background-color: #292c2f;
+        color: white;
+        font-size: 38pt;
+        text-align: center;
+        line-height: 550px;
+    }
+    footer{
+        position: relative;
+        bottom: 0px;
     
+    }
+    .footer-distributed{
+        background-color: #292c2f;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: bold 16px sans-serif;
+    
+        padding: 55px 50px;
+        margin-top: 80px;
+    }
+     
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: inline-block;
+        vertical-align: top;
+    }
+     
+    .footer-distributed .footer-left{
+        width: 40%;
+    }
+     
+    .footer-distributed h3{
+        color:  #ffffff;
+        font: normal 36px 'Cookie', cursive;
+        margin: 0;
+    }
+     
+    .footer-distributed h3 span{
+        color:  #5383d3;
+    }
+     
+     
+    .footer-distributed .footer-links{
+        color:  #ffffff;
+        margin: 20px 0 12px;
+        padding: 0;
+    }
+     
+    .footer-distributed .footer-links a{
+        display:inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color:  inherit;
+    }
+     
+    .footer-distributed .footer-company-name{
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+     
+     
+    .footer-distributed .footer-center{
+        width: 35%;
+    }
+     
+    .footer-distributed .footer-center i{
+        background-color:  #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+    }
+     
+    .footer-distributed .footer-center i.fa-envelope{
+        font-size: 17px;
+        line-height: 38px;
+    }
+     
+    .footer-distributed .footer-center p{
+        display: inline-block;
+        color: #ffffff;
+        vertical-align: middle;
+        margin:0;
+    }
+     
+    .footer-distributed .footer-center p span{
+        display:block;
+        font-weight: normal;
+        font-size:14px;
+        line-height:2;
+    }
+     
+    .footer-distributed .footer-center p a{
+        color:  #5383d3;
+        text-decoration: none;;
+    }
+     
+    .footer-distributed .footer-right{
+        width: 20%;
+    }
+     
+    .footer-distributed .footer-company-about{
+        line-height: 20px;
+        color:  #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+    }
+     
+    .footer-distributed .footer-company-about span{
+        display: block;
+        color:  #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+     
+    .footer-distributed .footer-icons{
+        margin-top: 25px;
+    }
+     
+    .footer-distributed .footer-icons a{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color:  #33383b;
+        border-radius: 2px;
+     
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+     
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+     
+     
+    @media (max-width: 880px) {
+     
+        .footer-distributed{
+            font: bold 14px sans-serif;
+        
+        }
+     
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+     
+        .footer-distributed .footer-center i{
+            margin-left: 0;
+        }
+        .main {
+            line-height: normal;
+            font-size: auto;
+        }
+     /* wav */
+    }
+  </style>
 </head>
 <body>
     <!-- Hero starts -->
@@ -60,8 +241,8 @@
             <ul class="nav navbar-nav">
                 
                 <li class="nav-item"><a href="./Tourism_Home.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">About</a></li>			
-                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link">About</a></li>			
+                <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
             </ul>
             <form class="navbar-form form-inline">
                 <div class="input-group search-box">								
@@ -144,7 +325,7 @@
         <!-- Main div -->
         <div class="jumbotron">
             <h1 class="text-center "> <span class="badge badge-danger">Welcome to Kerala Tourism </span></h1>
-                <div class="container">
+                <div class="container shadow p-3 mb-5 bg-white rounded">
                 <p class="text-justify text-info"> Kerala's culture and traditions, coupled with its varied demographics,
                      have made the state one of the most popular tourist destinations in India.
                       In 2012, National Geographic's Traveller magazine named Kerala as one of the 
@@ -158,16 +339,100 @@
                     destinations in the world.[517] In 2011, tourist inflow to Kerala crossed the 10-million mark.[518]</p>
                         </p>
                         </div>
-           <a href="Tourism_Login.html"> <h1 class="text-center "> <span id="blink" class="badge badge-danger"> Click me to Explore More </span></h1>
+           <a href="Tourism_Home.html"> <h1 class="text-center "> 
+               <span id="blink" class="badge badge-danger"> Click me to Explore More </span></h1>
+</a>
+<a href="Tourism_Districts.html"> <h1 class="text-center "> <span id="blink" class="badge badge-success"> <strong>all districts </strong></span></h1>
 </a>
 </div>        
         <!-- Main div -->
 <!-- Poloroid tilted div -->
-<div id="sideDiv" class="jumbotron sideDiv"></div>
+<div  class="jumbotron sideDiv">
+    <h1 class="text-center "> <span class="badge badge-danger">more to discover </span></h2>
+
+        <div class="polaroid rotate_right text-center">
+            <img src="Images/kanthan-para.jpg" alt="Pulpit rock" width="284" height="213">
+            <p class="caption">kanthan-para</p>
+          </div>
+          
+          <div class="polaroid rotate_left text-center">
+            <img src="Images/Neyyar.jpg" alt="Monterosso al Mare" width="284" height="213">
+            <p class="caption">Neyyar</p>
+          </div>
+          <div class="polaroid rotate_right text-center">
+            <img src="Images/Thenmala-Eco-Tourism.jpg" alt="Pulpit rock" width="284" height="213">
+            <p class="caption">Thenmala-Eco-Tourism</p>
+          </div>
+          
+          <div class="polaroid rotate_left text-center">
+            <img src="Images/Thommankuthu-Eco-Tourism.jpg" alt="Monterosso al Mare" width="284" height="213">
+            <p class="caption">Thommankuthu-Eco-Tourism</p>
+          </div>
+</div>
 <!-- polaroid tilted div -->
 <!-- footer -->
-<div id="nav-placeholder">
 
+<div id="footer" >
+  
+        
+        <!-- <div class="main"> </div> -->
+            <footer class="footer-distributed">
+     
+            <div class="footer-left">
+     
+            <h3>Tourism<span>Kerala</span></h3>
+     
+            <p class="footer-links">
+            <a href="#">Home</a>
+        ·
+            <a href="#">About</a>
+        ·
+            <a href="#">Contact</a>
+        ·
+            </p>
+     
+            <p class="footer-company-name">tourismkerala &copy; 2020</p>
+            </div>
+     
+            <div class="footer-center">
+     
+            <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>bhagithaparamesh</span> Kerala, India</p>
+            </div>
+     
+            <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 987654321</p>
+            </div>
+     
+            <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:bhagithaparamesh@gmail.com">contact@tourismkerala.com</a></p>
+            </div>
+     
+            </div>
+     
+            <div class="footer-right">
+     
+            <p class="footer-company-about">
+            <span>About the company</span>
+        This is the website to explore about kerala travelling spots &amp; for travellers.
+            </p>
+     
+            <div class="footer-icons">
+     
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+     
+            </div>
+     
+            </div>
+     
+            </footer>
+     
 </div>
 <!-- footer -->
         <script type="text/javascript">

@@ -309,7 +309,7 @@ to {background-color: rgb(3, 95, 95)
       margin-bottom: 0px;
   }
 .sideDiv{
-    background-image: url(/Slider/6.jpg);
+    background-image: url(Slider/6.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:500px;
